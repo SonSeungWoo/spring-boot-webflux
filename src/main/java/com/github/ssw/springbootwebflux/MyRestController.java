@@ -10,17 +10,17 @@ import reactor.core.publisher.Mono;
 public class MyRestController {
 
     @GetMapping("/user")
-    public String getUser(){
+    public String getUser() {
         return "SonSeungWoo";
     }
 
     @GetMapping("flux")
-    public Flux<String> getFlux(){
-        return Flux.just("a","b","c");
+    public Flux<String> getFlux() {
+        return Flux.just("a", "b", "c");
     }
 
     @GetMapping("/mono")
-    public Mono<String> getMono(){
+    public Mono<String> getMono() {
         return Mono.just("mono");
     }
 
